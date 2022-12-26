@@ -1,0 +1,18 @@
+first create env python=3.7
+activate and install labelme - pip install labelme.
+
+here we are doing segmentation using Detectron2. doing annotation only one file will be created called json, it will be 
+convered into coco format. bcz Detectron2 accept only COCO format.
+
+after annotation(labelme formated), that has to be converted into COCO for that run in terminal 
+labelme2coco.py (with anotated folder name)   - labelme2coco.py label_mask
+
+it will be created trainval.json file
+
+after create that, you have to keep only that genarated file and only image folder(without annotated json files)
+
+chech the data folder.
+
+
+
+
